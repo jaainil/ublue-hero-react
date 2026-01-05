@@ -1,6 +1,6 @@
 {
   "name": "ublue-hero-react",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React component for Universal Blue hero particle animation with p5.js",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
