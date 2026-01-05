@@ -2,8 +2,6 @@
 
 A React component for the Universal Blue hero particle animation powered by p5.js.
 
-![UBlue Hero Animation](https://via.placeholder.com/800x400?text=UBlue+Hero+Animation)
-
 ## Features
 
 - Smooth Perlin noise particle flow animation
@@ -31,8 +29,11 @@ import { UBlueHero } from 'ublue-hero-react';
 
 function App() {
   return (
-    <div style={{ width: '100vw', height: '100vh' }}>
-      <UBlueHero />
+    <div style={{ width: '100vw', height: '100vh', position: 'relative' }}>
+      <UBlueHero style={{ position: 'absolute', top: 0, left: 0, zIndex: -1 }} />
+      <div style={{ position: 'relative', zIndex: 1 }}>
+        <h1>Content</h1>
+      </div>
     </div>
   );
 }
@@ -168,11 +169,13 @@ The animation uses Perlin noise to create fluid particle movement:
    - Resets particles that go off-screen
 3. **Accessibility**: Checks system reduced motion preference
 4. **Responsive**: Resizes canvas on window resize
+5. **Optimization**: Animations pause when element is not in viewport or when page is scrolled away
 
 ## License
 
-MIT License - free to use in any project.
+GPL v3 - Based on Universal Blue (https://universal-blue.org/)
 
 ## Repository
 
-https://github.com/your-username/ublue-hero-react
+https://github.com/jaainil/ublue-hero-react
+

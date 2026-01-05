@@ -22,13 +22,17 @@
     "background"
   ],
   "author": "jaainil",
-  "license": "MIT",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaainil/ublue-hero-react.git"
+  },
   "dependencies": {
     "p5": "^2.1.2"
   },
   "peerDependencies": {
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3"
+    "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.28.5",
