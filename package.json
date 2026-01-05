@@ -1,0 +1,48 @@
+{
+  "name": "ublue-hero-react",
+  "version": "1.1.0",
+  "description": "React component for Universal Blue hero particle animation with p5.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/UBlueHero.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --emitDeclarationOnly --declaration --declarationDir dist && rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "keywords": [
+    "react",
+    "p5",
+    "animation",
+    "particle",
+    "hero",
+    "background"
+  ],
+  "author": "jaainil",
+  "license": "MIT",
+  "dependencies": {
+    "p5": "^2.1.2"
+  },
+  "peerDependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-react": "^7.28.5",
+    "@rollup/plugin-babel": "^6.1.0",
+    "@rollup/plugin-commonjs": "^29.0.0",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/p5": "^1.7.7",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "rollup": "^4.55.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3"
+  }
+}
