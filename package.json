@@ -25,7 +25,7 @@
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jaainil/ublue-hero-react.git"
+    "url": "git+https://github.com/jaainil/ublue-hero-react.git"
   },
   "dependencies": {
     "p5": "^2.1.2"
